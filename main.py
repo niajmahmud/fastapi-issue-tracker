@@ -14,9 +14,9 @@ app.middleware("http")(timing_middleware)
 app.add_middleware(
     CORSMiddleware,
     allow_credentials= True, 
-    allow_methods= ["*"]
-    allow_origin = ["*"]
-    allow_headers=["*"]
+    allow_methods= ["*"],
+    allow_origin = ["*"],
+    allow_headers=["*"], 
 )
 
 app.include_router(issues_router)
